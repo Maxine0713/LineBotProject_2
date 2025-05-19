@@ -32,8 +32,8 @@ configuration = Configuration(access_token=access_token)
 app = FastAPI()
 
 
-@app.post("/callback")
-async def callback(
+@app.post("/webhook")
+async def webhook(
     request: Request,
     x_line_signature: str = Header(None)
 ):
@@ -85,8 +85,6 @@ def handle_text_message(event: MessageEvent):
         )
 
 # 處理圖片訊息（延遲下載）
-
-
 @handler.add(MessageEvent, message=ImageMessageContent)
 def handle_image_message(event: MessageEvent):
     user_id = event.source.user_id
