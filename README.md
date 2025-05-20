@@ -1,3 +1,5 @@
+# .env 設定line Token & Secret
+-----------------
 # 建立虛擬環境（建議）
 python -m venv venv
 # 啟用虛擬環境（建議）
