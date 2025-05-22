@@ -5,9 +5,10 @@ __pycache__/
 *.log
 
 # Virtual environment
-myenv/
+myvenv/
 venv/
 .env
+config.py
 
 # VSCode
 .vscode/

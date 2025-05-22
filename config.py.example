@@ -1,0 +1,10 @@
+import os
+
+# Log
+LOG_DIR = "./collect"
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# 實際資料
+CASE_DIR = "實際路徑"
+os.makedirs(CASE_DIR, exist_ok=True)
+
